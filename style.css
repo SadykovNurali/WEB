@@ -1,0 +1,362 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7f2;
+    color: #333333;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    color: midnightblue;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+p {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: lightyellow;
+}
+
+#main-header {
+    width: 100%;
+    background-color: midnightblue;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid crimson;
+}
+
+#main-header h1 {
+    color: white;
+    margin: 0;
+    font-size: 32px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: crimson;
+    color: white;
+}
+
+#home:hover,
+#sportfood:hover,
+#recipes:hover,
+#team:hover {
+    background-color: crimson;
+    color: white;
+}
+
+main {
+    width: 84%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.info {
+    text-align: center;
+}
+
+.info p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.info img {
+    width: 80%;
+    max-width: 700px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.reason {
+    text-align: left;
+}
+
+.reason > h2 {
+    border-bottom: 2px solid crimson;
+    padding-bottom: 10px;
+}
+
+ul,
+ol {
+    margin: 15px 0 20px 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.recipe-card,
+.team-card {
+    background-color: #f8f9f4;
+    padding: 25px;
+    margin: 20px 0;
+    border: 1px solid #d8d8d8;
+    border-left: 5px solid midnightblue;
+    border-radius: 8px;
+}
+
+.recipe-card:hover,
+.team-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+.recipe-card h3,
+.team-card h3 {
+    color: midnightblue;
+}
+
+.recipe-card ul,
+.recipe-card ol,
+.team-card ul,
+.team-card ol {
+    padding-left: 10px;
+}
+
+.team-card:first-of-type {
+    border-left-color: crimson;
+}
+
+.logo-img {
+    width: 200px;
+    height: auto;
+    border-radius: 0  ;
+    border: none ;  
+    display: block;
+    margin: 15px auto;
+}
+
+.highlight {
+    background-color: lightyellow;
+    padding: 15px;
+    border-left: 5px solid crimson;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+table th,
+table td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: midnightblue;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #fff3f3;
+}
+
+#contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    display: block;
+    font-weight: bold;
+    margin: 12px 0 6px;
+    color: midnightblue;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbbbbb;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border: 2px solid midnightblue;
+}
+
+#contact-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+#contact-form button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: midnightblue;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: crimson;
+}
+
+button {
+    cursor: pointer;
+}
+
+footer {
+    background-color: midnightblue;
+    color: white;
+    text-align: center;
+    padding: 30px 10%;
+    margin-top: 50px;
+}
+
+footer p {
+    color: white;
+}
+
+footer ol {
+    display: inline-block;
+    text-align: left;
+    margin: 10px auto;
+}
+
+footer li {
+    color: white;
+}
+
+footer a {
+    color: lightyellow;
+}
+
+#recipes,
+#team {
+    color: white;
+}
+
+#recipes:hover,
+#team:hover {
+    color: white;
+    background-color: crimson;
+}
+
+@media (max-width: 768px) {
+    #main-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .info img {
+        width: 100%;
+        height: 230px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+    .recipe-img {
+    width: 100%;
+    max-width: 500px;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto 25px;
+    border-radius: 10px;
+    border: 3px solid midnightblue;
+}
+}
