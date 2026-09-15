@@ -88,9 +88,13 @@ nav a:hover {
 }
 
 main {
-    width: 84%;
-    max-width: 1200px;
-    margin: 40px auto;
+  padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
 }
 
 section {
@@ -104,11 +108,14 @@ section {
 
 .info {
     text-align: center;
+    margin-bottom: 2rem;
+     
 }
 
 .info p {
     max-width: 800px;
     margin: 0 auto 20px;
+    
 }
 
 .info img {
@@ -121,7 +128,12 @@ section {
 }
 
 .reason {
-    text-align: left;
+    text-align: left; 
+    background-color: snow;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-left: 5px solid darkblue;
+    
 }
 
 .reason > h2 {
@@ -171,13 +183,14 @@ li {
     border-left-color: crimson;
 }
 
-.logo-img {
-    width: 200px;
-    height: auto;
-    border-radius: 0  ;
-    border: none ;  
+.circle-logo {
+    width: 200px;           /* Ширина и высота должны быть одинаковыми */
+    height: 200px;
+    border-radius: 50%;     /* Делает картинку круглой */
+    object-fit: cover;      /* Сохраняет пропорции без растяжения */
+    border: 3px solid midnightblue; /* Опциональная красивая рамка в стиле вашего сайта */
     display: block;
-    margin: 15px auto;
+    margin: 20px auto;     /* Выравнивание по центру */
 }
 
 .highlight {
